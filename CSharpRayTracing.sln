@@ -1,0 +1,18 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2009
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "CSharpRayTracing", "CSharpRayTracing\CSharpRayTracing.shproj", "{9CDEF2DD-817D-4851-96B5-74AB14B4D652}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		CSharpRayTracing\CSharpRayTracing.projitems*{9cdef2dd-817d-4851-96b5-74ab14b4d652}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B0723BA6-B368-4F87-962E-811DBD33B94F}
+	EndGlobalSection
+EndGlobal
