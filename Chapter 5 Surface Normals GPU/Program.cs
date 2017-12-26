@@ -4,8 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
-namespace SceneParticles
+namespace Chapter_5_Surface_Normals
 {
     using glfw3;
     using static glfw3.glfw3;
@@ -16,19 +15,19 @@ namespace SceneParticles
 
     class Program
     {
-        static int width = 1366;
-        static int hight = 768;
-        static Scene scene = new SceneParticles();
+        static int width = 1600;
+        static int hight = 900;
+        static Scene scene = new SceneRayTracing(width,hight);
 
         static int Main(string[] args)
         {
-            
+
             GlfwInit();
             GlfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
             GlfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
             GlfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
             GlfwWindowHint(GLFW_RESIZABLE, GLFW_FALSE);
-            
+
             Gl.Initialize();
             GLFWwindow window = GlfwCreateWindow(width, hight, "LearnOpenGL", null, null);
             if (window == null)
@@ -41,7 +40,6 @@ namespace SceneParticles
             GlfwSetKeyCallback(window, key_callback);
             GLFWframebuffersizefun a = new GLFWframebuffersizefun(framebuffer_size_callback);
             GlfwSetFramebufferSizeCallback(window, a);
-            //Scene scene = new SceneParticles();
             Gl.ClearColor(0.5f, 0.0f, 0.0f, 1.0f);
             scene.InitScene();
             scene.Resize(width, hight);
@@ -50,12 +48,12 @@ namespace SceneParticles
             float[] time = new float[samples];
             int index = 0;
 
-            while ((GlfwWindowShouldClose(window) != GLFW_TRUE) && (GlfwGetKey(window, GLFW_KEY_ESCAPE)!= GLFW_TRUE))
+            while ((GlfwWindowShouldClose(window) != GLFW_TRUE) && (GlfwGetKey(window, GLFW_KEY_ESCAPE) != GLFW_TRUE))
             {
                 scene.Update((float)GlfwGetTime());
                 scene.Render();
                 //Gl.ClearColor(0.5f, 0.0f, 0.0f, 1.0f);
-                //Gl.Clear(ClearBufferMask.ColorBufferBit);
+               // Gl.Clear(ClearBufferMask.ColorBufferBit);
                 GlfwSwapBuffers(window);
                 GlfwPollEvents();
 
@@ -102,13 +100,7 @@ namespace SceneParticles
 
         static void key_callback(IntPtr window, int key, int scancode, int action, int mods)
         {
-            if (key == GLFW_KEY_SPACE && action == GLFW_RELEASE)
-            {
-                if (scene != null)
-                {
-                    scene.Animate = !scene.Animate;
-                }
-            }
+
         }
     }
 }

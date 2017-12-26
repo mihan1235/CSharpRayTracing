@@ -30,8 +30,8 @@ namespace SceneParticles
 
         void CompileAndLinkShader()
         {
-            renderProg = new Shader("shader/particles.vert", "shader/particles.frag");
-            computeProg = new ComputeShader("shader/particles.comp");
+            renderProg = new Shader("shaders/particles.vert", "shaders/particles.frag");
+            computeProg = new ComputeShader("shaders/particles.comp");
         }
 
         void InitBuffers()

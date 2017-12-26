@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27004.2009
+VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter 1 OutputAnImage", "OutputAnImage\Chapter 1 OutputAnImage.csproj", "{5F4BE81D-9AE7-4EC0-A44B-AAA73673509F}"
 EndProject
@@ -19,6 +19,14 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlfwGenerator", "GlfwGenerator\GlfwGenerator.csproj", "{815D3A3D-9B3E-4AEE-99B0-B0AACFBA85E7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Glfw_Generated", "Glfw_Generated\Glfw_Generated.csproj", "{0A959995-CE3A-49BC-9DAD-A3EC0B558AD7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter 1 OutputAnImage GPU", "Chapter 1 OutputAnImage GPU\Chapter 1 OutputAnImage GPU.csproj", "{676C086E-1CFF-4032-853B-5EC863C87A54}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter 3 Rays GPU", "Chapter 3 Rays GPU\Chapter 3 Rays GPU.csproj", "{067EB836-D888-42AD-9875-66FC978F1AEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter 4 Sphere GPU", "Chapter 4 Sphere GPU\Chapter 4 Sphere GPU.csproj", "{2D404960-3BC3-4A5B-9368-B6C9CDADC537}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter 5 Surface Normals GPU", "Chapter 5 Surface Normals GPU\Chapter 5 Surface Normals GPU.csproj", "{CA16F0A5-975D-410D-BCEC-2366E6A1CC5B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -54,6 +62,22 @@ Global
 		{0A959995-CE3A-49BC-9DAD-A3EC0B558AD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A959995-CE3A-49BC-9DAD-A3EC0B558AD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A959995-CE3A-49BC-9DAD-A3EC0B558AD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{676C086E-1CFF-4032-853B-5EC863C87A54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{676C086E-1CFF-4032-853B-5EC863C87A54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{676C086E-1CFF-4032-853B-5EC863C87A54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{676C086E-1CFF-4032-853B-5EC863C87A54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{067EB836-D888-42AD-9875-66FC978F1AEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{067EB836-D888-42AD-9875-66FC978F1AEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{067EB836-D888-42AD-9875-66FC978F1AEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{067EB836-D888-42AD-9875-66FC978F1AEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D404960-3BC3-4A5B-9368-B6C9CDADC537}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D404960-3BC3-4A5B-9368-B6C9CDADC537}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D404960-3BC3-4A5B-9368-B6C9CDADC537}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D404960-3BC3-4A5B-9368-B6C9CDADC537}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA16F0A5-975D-410D-BCEC-2366E6A1CC5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA16F0A5-975D-410D-BCEC-2366E6A1CC5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA16F0A5-975D-410D-BCEC-2366E6A1CC5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA16F0A5-975D-410D-BCEC-2366E6A1CC5B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

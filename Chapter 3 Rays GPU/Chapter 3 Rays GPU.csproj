@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5F4BE81D-9AE7-4EC0-A44B-AAA73673509F}</ProjectGuid>
+    <ProjectGuid>{067EB836-D888-42AD-9875-66FC978F1AEF}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>OutputAnImage</RootNamespace>
-    <AssemblyName>OutputAnImage</AssemblyName>
+    <RootNamespace>Chapter_3_Rays_GPU</RootNamespace>
+    <AssemblyName>Chapter 3 Rays GPU</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -34,6 +34,18 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="glfw3-net, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\bin\Debug\glfw3-net.dll</HintPath>
+    </Reference>
+    <Reference Include="GlmSharp, Version=0.9.8.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\GlmSharp.0.9.8\lib\Net45\GlmSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenGL.Net, Version=0.7.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\OpenGL.Net.0.7.1\lib\net461\OpenGL.Net.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -44,11 +56,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ComputeShader.cs" />
+    <Compile Include="IShader.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Scene.cs" />
+    <Compile Include="SceneRayTracing.cs" />
+    <Compile Include="Shader.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="shaders\ray_tracing.comp" />
+    <None Include="shaders\render.frag" />
+    <None Include="shaders\render.vert" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
