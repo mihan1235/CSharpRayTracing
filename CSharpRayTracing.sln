@@ -28,6 +28,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter 4 Sphere GPU", "Cha
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter 5 Surface Normals GPU", "Chapter 5 Surface Normals GPU\Chapter 5 Surface Normals GPU.csproj", "{CA16F0A5-975D-410D-BCEC-2366E6A1CC5B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter 5 Multiple Objects GPU", "Chapter 5 Multiple Objects GPU\Chapter 5 Multiple Objects GPU.csproj", "{538FD397-252A-463B-BC8E-27D2B431C4CE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -78,6 +80,10 @@ Global
 		{CA16F0A5-975D-410D-BCEC-2366E6A1CC5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA16F0A5-975D-410D-BCEC-2366E6A1CC5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA16F0A5-975D-410D-BCEC-2366E6A1CC5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{538FD397-252A-463B-BC8E-27D2B431C4CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{538FD397-252A-463B-BC8E-27D2B431C4CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{538FD397-252A-463B-BC8E-27D2B431C4CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{538FD397-252A-463B-BC8E-27D2B431C4CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
